@@ -1,8 +1,7 @@
 puts "\n\n"
 debt = 7780.69
-interest_rate = 0.08
-years_to_pay = 4
-payments = 175
+interest_rate = 0.20
+payments = 200
 total_interest = 0
 
 i = 0
@@ -23,7 +22,10 @@ while debt > 0 do
   i += 1
 end
 
-puts "Months        :: " + i.to_s + "\n"
-puts "Years         :: " + year.to_s + "\n"
+puts "Begining Debt   :: %.2f \n" % 7780.69
+puts "Monthly Payment :: %.2f \n" % payments
+puts "Interest Rate   :: %d \%" % (interest_rate * 100)
+puts "Months          :: " + i.to_s + "\n"
+puts "Years           :: " + year.to_s + "\n"
 puts "------------------"
-puts "Interest Paid :: %06.2f \n\n\n" % total_interest
+puts "Interest Paid :: $ %6.2f \n\n\n" % total_interest
